@@ -138,17 +138,12 @@ RCT_EXPORT_METHOD(trackAppLaunch)
     [[AppsFlyerTracker sharedTracker] trackAppLaunch];
 }
 
-RCT_EXPORT_METHOD(sendTrackingWithEvent: (NSString *)eventName eventValues: (NSDictionary *)eventValues)
-{
-    [[AppsFlyerTracker sharedTracker] trackEvent:eventName withValues:eventValues];
-}
-
-RCT_REMAP_METHOD(trackEvent, eventName: (NSString *)eventName eventValue:(NSString *)eventValue)
+RCT_REMAP_METHOD(trackEventWithValue, eventName: (NSString *)eventName eventValue:(NSString *)eventValue)
 {
     [[AppsFlyerTracker sharedTracker] trackEvent:eventName withValue:eventValue];
 }
 
-RCT_REMAP_METHOD(trackEvents, eventName: (NSString *)eventName eventValues:(NSDictionary *)eventValues)
+RCT_REMAP_METHOD(trackEventWithValues, eventName: (NSString *)eventName eventValues:(NSDictionary *)eventValues)
 {
     [[AppsFlyerTracker sharedTracker] trackEvent:eventName withValues:eventValues];
 }
