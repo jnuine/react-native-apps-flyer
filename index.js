@@ -13,7 +13,7 @@ function trackEvent (name, payload) {
     return trackEventWithValue.call(RNAppsFlyer, name, payload);
   }
 
-  return trackEventWithValue.call(RNAppsFlyer, name);
+  return trackEventWithValue.call(RNAppsFlyer, name, '');
 }
 
 const exportedRNAppsFlyer = (
