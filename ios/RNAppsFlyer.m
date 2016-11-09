@@ -72,6 +72,7 @@ RCT_EXPORT_MODULE()
                      @"AFEventParamValidated": AFEventParamValidated,
                      @"AFEventParamRevenue": AFEventParamRevenue,
                      @"AFEventParamReceiptId": AFEventParamReceiptId,
+                     @"AFEventParamOrderId": AFEventOrderId, // typo bug in sdk ;)
                      @"AFEventParam1": AFEventParam1,
                      @"AFEventParam2": AFEventParam2,
                      @"AFEventParam3": AFEventParam3,
